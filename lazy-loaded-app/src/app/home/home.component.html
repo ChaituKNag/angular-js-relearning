@@ -1,5 +1,4 @@
-<ul>
-  <li *ngFor="let user of (users$ | async)?.data">
-    <a [routerLink]="['user', user.id]">{{user.first_name}}</a>
-  </li>
-</ul>
+<nav>
+  <a routerLink="/">Home</a>
+</nav>
+<router-outlet></router-outlet>
