@@ -1,4 +1,11 @@
 <nav>
-  <a routerLink="/">Home</a>
+  <a
+    routerLink="/"
+    routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Home</a
+  >
+  |
+  <a routerLink="/cities" routerLinkActive="active-link">Cities</a>
 </nav>
 <router-outlet></router-outlet>
