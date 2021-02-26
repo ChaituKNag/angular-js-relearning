@@ -1,0 +1,6 @@
+<h1>User ID: {{ (route.params | async).userId }}</h1>
+<p *ngIf="!(user | async)">Loading...</p>
+
+<p *ngIf="!!(user | async)">
+  User name: {{ (user | async)?.data?.first_name }}
+</p>
